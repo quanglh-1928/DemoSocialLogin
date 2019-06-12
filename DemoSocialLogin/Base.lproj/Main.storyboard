@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoSocialLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-pW-Uae">
+                                <rect key="frame" x="157" y="94" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AtO-pW-Uae" secondAttribute="height" id="ITf-mY-LwC"/>
+                                    <constraint firstAttribute="width" constant="100" id="YiH-dO-pID"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8mh-hV-DJZ">
+                                <rect key="frame" x="165.5" y="224" width="83.5" height="82"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyp-gZ-jHA">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ks1-2h-EAN">
+                                        <rect key="frame" x="0.0" y="20.5" width="83.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7S-eK-dqR">
+                                        <rect key="frame" x="0.0" y="41" width="83.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fO-Kf-XZP">
+                                        <rect key="frame" x="0.0" y="61.5" width="83.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AGK-AA-0CE">
+                                <rect key="frame" x="100" y="456" width="214" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLW-vp-kKd">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Osr-ir-q9R"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Facebook Login" image="fb_ic">
+                                            <color key="titleColor" red="0.27787157893180847" green="0.34936386346817017" blue="0.57622838020324707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onFbLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VB6-m4-lwJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlI-1v-bqE">
+                                        <rect key="frame" x="0.0" y="50" width="214" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0nV-7i-wbQ"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Google Login" image="gg_ic">
+                                            <color key="titleColor" red="0.95193475484848022" green="0.28860396146774292" blue="0.21839797496795654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onGoogleLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sq7-uh-qIn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6l-FS-jdE">
+                                        <rect key="frame" x="0.0" y="100" width="214" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="a6U-dG-Gf3"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Test crashlytic">
+                                            <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTestCrashlytic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7BI-bc-ald"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8mh-hV-DJZ" firstAttribute="top" secondItem="AtO-pW-Uae" secondAttribute="bottom" constant="30" id="1A9-3m-cr5"/>
+                            <constraint firstItem="AGK-AA-0CE" firstAttribute="top" secondItem="8mh-hV-DJZ" secondAttribute="bottom" constant="150" id="7Yr-ub-yxM"/>
+                            <constraint firstItem="AtO-pW-Uae" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MNb-7v-RRe"/>
+                            <constraint firstItem="AGK-AA-0CE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Ycf-dX-net"/>
+                            <constraint firstItem="AtO-pW-Uae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="faO-XP-bXg"/>
+                            <constraint firstItem="8mh-hV-DJZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ufZ-gh-rh9"/>
+                            <constraint firstItem="AGK-AA-0CE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zLw-Gf-9QT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="AtO-pW-Uae" id="8Be-Lt-IjS"/>
+                        <outlet property="emailLabel" destination="8fO-Kf-XZP" id="qiE-E0-kpx"/>
+                        <outlet property="idLabel" destination="Eyp-gZ-jHA" id="f4n-dB-8kO"/>
+                        <outlet property="nameLabel" destination="Ks1-2h-EAN" id="gtl-5h-Db6"/>
+                        <outlet property="userNameLabel" destination="X7S-eK-dqR" id="vqF-Ak-uN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fb_ic" width="30" height="30"/>
+        <image name="gg_ic" width="40" height="26"/>
+    </resources>
+</document>
